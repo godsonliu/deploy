@@ -1,0 +1,665 @@
+{
+  "wrapper": "#gift-guide",
+  "sections": {
+    "c6f155d6-2921-4fa5-a83c-6f3bc24991dd": {
+      "type": "custom-style-block",
+      "blocks": {
+        "b68602fe-49a9-4898-bd2a-692702b2f5e0": {
+          "type": "StyleLink",
+          "settings": {
+            "styleName": "gift-guide.scss"
+          }
+        }
+      },
+      "block_order": [
+        "b68602fe-49a9-4898-bd2a-692702b2f5e0"
+      ],
+      "settings": {}
+    },
+    "gift-product-banner": {
+      "type": "gift_product_banner",
+      "settings": {
+        "img_pc": "shopify:\/\/shop_images\/1920x720_landing-us-pc.jpg",
+        "img_mb": "shopify:\/\/shop_images\/750x980_landing-us-mo.jpg",
+        "title1": "",
+        "title2": "",
+        "title3": ""
+      }
+    },
+    "1fb2b3b2-8459-46aa-a7c0-d9dcb1c25630": {
+      "type": "component_nav_v2",
+      "blocks": {
+        "226e112d-acf8-477d-8a85-efa1e7416282": {
+          "type": "nav_item",
+          "settings": {
+            "item_txt": "Advent Calendar",
+            "item_id": "shopify-section-template--16013875675305__gift-product-calendar"
+          }
+        },
+        "e48b099a-22a2-463a-acdc-54bdfc4ebc4d": {
+          "type": "nav_item",
+          "settings": {
+            "item_txt": "Top Security",
+            "item_id": "shopify-section-template--16013875675305__63fc1e2a-9367-4a9c-8607-2183909efa96"
+          }
+        },
+        "3b94f2a7-22c7-46ce-bc27-8be1f2d8a5e9": {
+          "type": "nav_item",
+          "settings": {
+            "item_txt": "Best Clean",
+            "item_id": "shopify-section-template--16013875675305__98907b9c-741e-4de9-b042-6144409b5237"
+          }
+        },
+        "6f97cd47-6708-4356-a1cc-4844c32a9361": {
+          "type": "nav_item",
+          "settings": {
+            "item_txt": "Exclusive Bundles",
+            "item_id": "shopify-section-template--16013875675305__d84a336b-bb45-4294-a796-e1a1c228b7a2"
+          }
+        }
+      },
+      "block_order": [
+        "226e112d-acf8-477d-8a85-efa1e7416282",
+        "e48b099a-22a2-463a-acdc-54bdfc4ebc4d",
+        "3b94f2a7-22c7-46ce-bc27-8be1f2d8a5e9",
+        "6f97cd47-6708-4356-a1cc-4844c32a9361"
+      ],
+      "settings": {
+        "custom_style": "2",
+        "item_text_align": "center",
+        "box_width": "",
+        "box_bg": "#f6f6f6",
+        "text_color": "#595757",
+        "item_bg": "#f6f6f6",
+        "item_border_color": "#000000",
+        "item_radius": "",
+        "light_text_color": "#323232",
+        "light_item_bg": "",
+        "light_item_border_color": "",
+        "custom_class": ""
+      }
+    },
+    "gift-product-calendar": {
+      "type": "gift_product_calendar",
+      "blocks": {
+        "a7e31d56-3a68-4758-8c73-2bfb69880944": {
+          "type": "product",
+          "settings": {
+            "product": "t2262111",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "f29c9f53-befe-4628-8ede-126b9a2fabce": {
+          "type": "coupon",
+          "settings": {
+            "coupon_bg": "shopify:\/\/shop_images\/gift_coupon.png",
+            "coupon_code": "WS24HS15",
+            "coupon_val": "15%"
+          }
+        },
+        "8415f4b5-9da6-4261-b6ae-0823abb2632c": {
+          "type": "product",
+          "settings": {
+            "product": "t80301d1-80",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "9e12ac5d-a255-4e78-beaf-db2bfb91b363": {
+          "type": "product",
+          "settings": {
+            "product": "t80301d1-80",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "b5f579ec-1a16-4083-9bec-96001ac557f0": {
+          "type": "product",
+          "settings": {
+            "product": "t88711w1",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "ebb81f7c-1da2-4781-a0fd-060d6ca1da4a": {
+          "type": "product",
+          "settings": {
+            "product": "t8881121",
+            "sku": "",
+            "product_title": "S330 eufyCam (eufyCam 3) + 1 TB Hard Drive",
+            "product_description": "Expandable local storage allows you to save videos for no monthly fee.",
+            "product_url": ""
+          }
+        },
+        "0789a58a-8584-4f30-bb85-0a13a5ce04f9": {
+          "type": "product",
+          "settings": {
+            "product": "e8203111",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "5b8cd2b3-e347-4e58-ab4b-782e1317943c": {
+          "type": "product",
+          "settings": {
+            "product": "t8302",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "05c3ec21-1e79-427f-b901-e6fbb5cf4b8d": {
+          "type": "product",
+          "settings": {
+            "product": "t8213181-a",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "c7ed4bde-c74d-40dc-a678-f3b23c16d769": {
+          "type": "product",
+          "settings": {
+            "product": "t2273111",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "f4078b89-628b-4dde-8236-dc470eb04700": {
+          "type": "product",
+          "settings": {
+            "product": "t80301d1-80",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "8c4c3342-d321-475f-b3f8-395c3c929ccc": {
+          "type": "product",
+          "settings": {
+            "product": "t2253",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "8aed6381-12b1-4ea8-a105-e6743b4f0264": {
+          "type": "product",
+          "settings": {
+            "product": "t2261111-kit",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "ee417ab6-8e95-4d15-a4d1-1cedd86b76fd": {
+          "type": "product",
+          "settings": {
+            "product": "solocam-s40redeem",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "7a0e913b-256d-4354-b461-07ac87e82ca8": {
+          "type": "product",
+          "settings": {
+            "product": "t81243w1",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "2081182d-99ec-4ae2-9d3e-71e862a2d473": {
+          "type": "product",
+          "settings": {
+            "product": "t8200",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "a4a4966a-b599-4884-9db6-1c0596e59054": {
+          "type": "product",
+          "settings": {
+            "product": "t8302",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "0e7c6895-19b3-4ba5-bc9f-e4bcae3da026": {
+          "type": "product",
+          "settings": {
+            "product": "bundle-t2522112t2986011-2",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "78135543-bd7e-4dbd-9bc3-62431f3fa41c": {
+          "type": "product",
+          "settings": {
+            "product": "t2262111",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "36a7efe1-740a-45fe-91f0-19f78af4bc10": {
+          "type": "product",
+          "settings": {
+            "product": "t2150",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "9d163dff-0177-40c8-a268-472ae4c92328": {
+          "type": "product",
+          "settings": {
+            "product": "t2257111",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "b53c8ea8-905f-4e4e-99d9-f1b0d7d98415": {
+          "type": "product",
+          "settings": {
+            "product": "t2258111",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "bee064fa-84e1-431a-ab92-c05d95a05cbd": {
+          "type": "product",
+          "settings": {
+            "product": "t2550111",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "f0154e1a-7255-4094-954e-45c777436a7c": {
+          "type": "product",
+          "settings": {
+            "product": "solocam-s40redeem",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        },
+        "3cb34044-1949-4a2d-bdc9-c16cf3f13357": {
+          "type": "product",
+          "settings": {
+            "product": "t8302",
+            "sku": "",
+            "product_title": "",
+            "product_description": "",
+            "product_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "a7e31d56-3a68-4758-8c73-2bfb69880944",
+        "f29c9f53-befe-4628-8ede-126b9a2fabce",
+        "8415f4b5-9da6-4261-b6ae-0823abb2632c",
+        "9e12ac5d-a255-4e78-beaf-db2bfb91b363",
+        "b5f579ec-1a16-4083-9bec-96001ac557f0",
+        "ebb81f7c-1da2-4781-a0fd-060d6ca1da4a",
+        "0789a58a-8584-4f30-bb85-0a13a5ce04f9",
+        "5b8cd2b3-e347-4e58-ab4b-782e1317943c",
+        "05c3ec21-1e79-427f-b901-e6fbb5cf4b8d",
+        "c7ed4bde-c74d-40dc-a678-f3b23c16d769",
+        "f4078b89-628b-4dde-8236-dc470eb04700",
+        "8c4c3342-d321-475f-b3f8-395c3c929ccc",
+        "8aed6381-12b1-4ea8-a105-e6743b4f0264",
+        "ee417ab6-8e95-4d15-a4d1-1cedd86b76fd",
+        "7a0e913b-256d-4354-b461-07ac87e82ca8",
+        "2081182d-99ec-4ae2-9d3e-71e862a2d473",
+        "a4a4966a-b599-4884-9db6-1c0596e59054",
+        "0e7c6895-19b3-4ba5-bc9f-e4bcae3da026",
+        "78135543-bd7e-4dbd-9bc3-62431f3fa41c",
+        "36a7efe1-740a-45fe-91f0-19f78af4bc10",
+        "9d163dff-0177-40c8-a268-472ae4c92328",
+        "b53c8ea8-905f-4e4e-99d9-f1b0d7d98415",
+        "bee064fa-84e1-431a-ab92-c05d95a05cbd",
+        "f0154e1a-7255-4094-954e-45c777436a7c",
+        "3cb34044-1949-4a2d-bdc9-c16cf3f13357"
+      ],
+      "settings": {
+        "title": "eufy Gift Guide <br>Advent Calendar",
+        "button": "click to open",
+        "title_coupon": "Welcome back<br> to advent calendar gift guide",
+        "desc_coupon": "You have a $coupon off code on all<br> eufy products excluding cam 3\/3c and<br> replacementsends",
+        "tip_coupon": "Code(valid until 25th Dec.):",
+        "copy": "Copy",
+        "copied": "Copied",
+        "rule_title": "Rules:",
+        "rule": "1. A gift will appear every day after you click the button, and you will only see the current gift for each day. <br> \n  2. Your coupon code will end on Dec. 25th. It applies to all eufy products except cam 3\/3c and replacements.<br> \n  3. Dates from the 1st up to the current date will be highlighted in a bright color. So, on Dec. 25th, all dates in the calendar will be highlighted.",
+        "title_modal": "Happy holiday!",
+        "desc_modal": "Get festive with gift we’ve prepared for you!",
+        "off_modal": "Off",
+        "code_modal": "CODE:",
+        "buy_modal": "Buy Now",
+        "more_modal": "Learn More",
+        "title2_modal": "Happy holiday!",
+        "desc2_modal": "Enjoy $coupon Off all eufy products with this exclusive coupon.",
+        "tip_modal": "Note: code ends 25th Dec."
+      }
+    },
+    "63fc1e2a-9367-4a9c-8607-2183909efa96": {
+      "type": "component_flash_sale_v2",
+      "blocks": {
+        "6a3f273f-3a42-4fcd-aadd-3bf575051406": {
+          "type": "limited_item",
+          "settings": {
+            "product_info": "t88711w1",
+            "variant_sku": "",
+            "product_title": "",
+            "product_desc": ""
+          }
+        },
+        "cdf950c2-b4a2-45c8-9407-272b78390f30": {
+          "type": "limited_item",
+          "settings": {
+            "product_info": "t2262111",
+            "variant_sku": "",
+            "product_title": "",
+            "product_desc": ""
+          }
+        },
+        "f4b76445-6896-4093-9e7f-ddeccba67c2c": {
+          "type": "limited_item",
+          "settings": {
+            "product_info": "t8213181-a",
+            "variant_sku": "",
+            "product_title": "",
+            "product_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "6a3f273f-3a42-4fcd-aadd-3bf575051406",
+        "cdf950c2-b4a2-45c8-9407-272b78390f30",
+        "f4b76445-6896-4093-9e7f-ddeccba67c2c"
+      ],
+      "settings": {
+        "box_max_width": "1200px-3-2-2",
+        "box_mobile_max_width": "100%-2-2-1",
+        "box_bg": "",
+        "limited_items_radius": "16px",
+        "limited_items_border_color": "",
+        "card_bg": "#ffffff",
+        "content_text_align": "flex-start",
+        "product_title_color": "#000000",
+        "product_desc_color": "#333333",
+        "price_color": "#000000",
+        "compare_at_price_color": "#999999",
+        "code_text": "CODE",
+        "code_text_color": "#999999",
+        "copy_text": "Copy",
+        "copying_text": "COPIED",
+        "copy_text_color": "",
+        "button_radius": "70px",
+        "button_txt": "Buy Now",
+        "learn_more": "Learn More",
+        "button_bg": "#096d52",
+        "button_border_color": "#096d52",
+        "button_txt_color": "",
+        "button_hover_bg": "#096d52",
+        "button_hover_border_color": "#096d52",
+        "button_hover_txt_color": "#ffffff",
+        "button2_bg": "#096d52",
+        "button2_border_color": "#096d52",
+        "button2_txt_color": "#ffffff",
+        "button2_hover_bg": "#096d52",
+        "button2_hover_border_color": "#096d52",
+        "button2_hover_txt_color": "#ffffff",
+        "view_more_text": "View More",
+        "view_more_bg": "#ffffff",
+        "view_more_number": 4,
+        "icon_bg": "shopify:\/\/shop_images\/gift_guide_tag.png",
+        "icon_default": "{% render 'component_flash_sale_icon' %}",
+        "icon_txt": "<br>Off",
+        "icon_txt_color": "#ffffff",
+        "has_show_discount": true,
+        "has_show_reviews": true,
+        "has_show_price": true,
+        "eventAction": "Copy",
+        "img_source": "gift-guide",
+        "ga4_img_source": "img_",
+        "button_source": "gift-guide",
+        "ga4_button_source": "learn More_",
+        "ga4_page_group": "Activity Page_gift-guide",
+        "custom_class": ""
+      }
+    },
+    "98907b9c-741e-4de9-b042-6144409b5237": {
+      "type": "component_flash_sale_v2",
+      "blocks": {
+        "6a3f273f-3a42-4fcd-aadd-3bf575051406": {
+          "type": "limited_item",
+          "settings": {
+            "product_info": "t88711w1",
+            "variant_sku": "",
+            "product_title": "",
+            "product_desc": ""
+          }
+        },
+        "cdf950c2-b4a2-45c8-9407-272b78390f30": {
+          "type": "limited_item",
+          "settings": {
+            "product_info": "t8881121",
+            "variant_sku": "",
+            "product_title": "",
+            "product_desc": ""
+          }
+        },
+        "f4b76445-6896-4093-9e7f-ddeccba67c2c": {
+          "type": "limited_item",
+          "settings": {
+            "product_info": "e8203111",
+            "variant_sku": "",
+            "product_title": "",
+            "product_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "6a3f273f-3a42-4fcd-aadd-3bf575051406",
+        "cdf950c2-b4a2-45c8-9407-272b78390f30",
+        "f4b76445-6896-4093-9e7f-ddeccba67c2c"
+      ],
+      "settings": {
+        "box_max_width": "1200px-3-2-2",
+        "box_mobile_max_width": "100%-2-2-1",
+        "box_bg": "",
+        "limited_items_radius": "16px",
+        "limited_items_border_color": "",
+        "card_bg": "#ffffff",
+        "content_text_align": "flex-start",
+        "product_title_color": "#000000",
+        "product_desc_color": "#333333",
+        "price_color": "#000000",
+        "compare_at_price_color": "#999999",
+        "code_text": "CODE",
+        "code_text_color": "#999999",
+        "copy_text": "Copy",
+        "copying_text": "COPIED",
+        "copy_text_color": "",
+        "button_radius": "70px",
+        "button_txt": "Buy Now",
+        "learn_more": "Learn More",
+        "button_bg": "#096d52",
+        "button_border_color": "#096d52",
+        "button_txt_color": "",
+        "button_hover_bg": "#096d52",
+        "button_hover_border_color": "#096d52",
+        "button_hover_txt_color": "#ffffff",
+        "button2_bg": "#096d52",
+        "button2_border_color": "#096d52",
+        "button2_txt_color": "#ffffff",
+        "button2_hover_bg": "#096d52",
+        "button2_hover_border_color": "#096d52",
+        "button2_hover_txt_color": "#ffffff",
+        "view_more_text": "View More",
+        "view_more_bg": "#ffffff",
+        "view_more_number": 4,
+        "icon_bg": "shopify:\/\/shop_images\/gift_guide_tag.png",
+        "icon_default": "{% render 'component_flash_sale_icon' %}",
+        "icon_txt": "<br>Off",
+        "icon_txt_color": "#ffffff",
+        "has_show_discount": true,
+        "has_show_reviews": true,
+        "has_show_price": true,
+        "eventAction": "Copy",
+        "img_source": "gift-guide",
+        "ga4_img_source": "img_",
+        "button_source": "gift-guide",
+        "ga4_button_source": "learn More_",
+        "ga4_page_group": "Activity Page_gift-guide",
+        "custom_class": ""
+      }
+    },
+    "d84a336b-bb45-4294-a796-e1a1c228b7a2": {
+      "type": "component_flash_sale_v2",
+      "blocks": {
+        "6a3f273f-3a42-4fcd-aadd-3bf575051406": {
+          "type": "limited_item",
+          "settings": {
+            "product_info": "t88711w1",
+            "variant_sku": "",
+            "product_title": "",
+            "product_desc": ""
+          }
+        },
+        "cdf950c2-b4a2-45c8-9407-272b78390f30": {
+          "type": "limited_item",
+          "settings": {
+            "product_info": "t8881121",
+            "variant_sku": "",
+            "product_title": "",
+            "product_desc": ""
+          }
+        },
+        "f4b76445-6896-4093-9e7f-ddeccba67c2c": {
+          "type": "limited_item",
+          "settings": {
+            "product_info": "e8203111",
+            "variant_sku": "",
+            "product_title": "",
+            "product_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "6a3f273f-3a42-4fcd-aadd-3bf575051406",
+        "cdf950c2-b4a2-45c8-9407-272b78390f30",
+        "f4b76445-6896-4093-9e7f-ddeccba67c2c"
+      ],
+      "settings": {
+        "box_max_width": "1200px-3-2-2",
+        "box_mobile_max_width": "100%-2-2-1",
+        "box_bg": "",
+        "limited_items_radius": "16px",
+        "limited_items_border_color": "",
+        "card_bg": "#ffffff",
+        "content_text_align": "flex-start",
+        "product_title_color": "#000000",
+        "product_desc_color": "#333333",
+        "price_color": "#000000",
+        "compare_at_price_color": "#999999",
+        "code_text": "CODE",
+        "code_text_color": "#999999",
+        "copy_text": "Copy",
+        "copying_text": "COPIED",
+        "copy_text_color": "",
+        "button_radius": "70px",
+        "button_txt": "Buy Now",
+        "learn_more": "Learn More",
+        "button_bg": "#096d52",
+        "button_border_color": "#096d52",
+        "button_txt_color": "",
+        "button_hover_bg": "#096d52",
+        "button_hover_border_color": "#096d52",
+        "button_hover_txt_color": "#ffffff",
+        "button2_bg": "#096d52",
+        "button2_border_color": "#096d52",
+        "button2_txt_color": "#ffffff",
+        "button2_hover_bg": "#096d52",
+        "button2_hover_border_color": "#096d52",
+        "button2_hover_txt_color": "#ffffff",
+        "view_more_text": "View More",
+        "view_more_bg": "#ffffff",
+        "view_more_number": 4,
+        "icon_bg": "shopify:\/\/shop_images\/gift_guide_tag.png",
+        "icon_default": "{% render 'component_flash_sale_icon' %}",
+        "icon_txt": "<br>Off",
+        "icon_txt_color": "#ffffff",
+        "has_show_discount": true,
+        "has_show_reviews": true,
+        "has_show_price": true,
+        "eventAction": "Copy",
+        "img_source": "gift-guide",
+        "ga4_img_source": "img_",
+        "button_source": "gift-guide",
+        "ga4_button_source": "learn More_",
+        "ga4_page_group": "Activity Page_gift-guide",
+        "custom_class": ""
+      }
+    },
+    "gift_product_box": {
+      "type": "gift_product_box",
+      "settings": {
+        "img1": "shopify:\/\/shop_images\/gift_product_box1.png",
+        "title1": "All Security",
+        "link1": "shopify:\/\/collections\/security",
+        "img2": "shopify:\/\/shop_images\/gift_product_box2.png",
+        "title2": "All Clean",
+        "link2": "shopify:\/\/collections"
+      }
+    }
+  },
+  "order": [
+    "c6f155d6-2921-4fa5-a83c-6f3bc24991dd",
+    "gift-product-banner",
+    "1fb2b3b2-8459-46aa-a7c0-d9dcb1c25630",
+    "gift-product-calendar",
+    "63fc1e2a-9367-4a9c-8607-2183909efa96",
+    "98907b9c-741e-4de9-b042-6144409b5237",
+    "d84a336b-bb45-4294-a796-e1a1c228b7a2",
+    "gift_product_box"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "description": "shopify deploy",
+  "main": "deploy.js",
+  "bin": {
+    "deploy": "./deploy.js"
+  },
+  "scripts": {
+    "start": "node deploy.js"
+  },
+  "keywords": [
+    "deploy"
+  ],
+  "author": "godson",
+  "license": "ISC",
+  "dependencies": {
+    "@shopify/themekit": "^1.1.9",
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "inquirer": "^8.2.5",
+    "yaml": "^2.1.3"
+  }
+}
