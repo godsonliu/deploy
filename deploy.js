@@ -12,6 +12,7 @@ program
   .option("-e, --env <shop>", "默认配置文件首个商店")
   .option("-c, --config <file>", "默认: ./config.yml")
   .option("-y, --yes", "自动上传模式")
+  .option("-a, --all", "全量上传模式");
 
 program.parse();
 const options = program.opts();
@@ -41,7 +42,7 @@ const request = (url, data) => {
             try {
               const json = JSON.parse(str);
               resolve(json);
-            } catch(e) {
+            } catch (e) {
               resolve(str);
             }
           });
@@ -51,13 +52,11 @@ const request = (url, data) => {
       reject(err);
     });
     if (data) {
-      req.write(
-        JSON.stringify(data)
-      );
+      req.write(JSON.stringify(data));
     }
     req.end();
   });
-}
+};
 
 const upload = (shop, originalSource) => {
   const query = `mutation fileCreate($files: [FileCreateInput!]!) {
@@ -81,16 +80,21 @@ const upload = (shop, originalSource) => {
   };
   return request(`https://${config[shop].store}/${api}/graphql.json`, {
     query,
-    variables
+    variables,
   });
 };
 
 const uploadImgs = (shop, template) => {
   return new Promise((resolve, reject) => {
     fs.readFile(template, async (err, data) => {
-      let { assets } = await request(`https://${config[env].store}/${api}/themes/${config[env].theme_id}/assets.json`);
+      let { assets } = await request(
+        `https://${config[env].store}/${api}/themes/${config[env].theme_id}/assets.json`
+      );
       assets = assets.filter((item) => item.public_url);
-      const baseURL = assets[0].public_url.match(/(https:\/\/cdn\.shopify.com\/s\/files\/\d+\/\d+\/\d+\/\d+)/)[1] + "/files";
+      const baseURL =
+        assets[0].public_url.match(
+          /(https:\/\/cdn\.shopify.com\/s\/files\/\d+\/\d+\/\d+\/\d+)/
+        )[1] + "/files";
       if (err) throw err;
       if (data) {
         let arr = [];
@@ -108,7 +112,9 @@ const uploadImgs = (shop, template) => {
             }
           }
         };
-        iteration(JSON.parse(data));
+        try {
+          iteration(JSON.parse(data));
+        } catch (e) {}
         arr = arr.map(function (item) {
           return baseURL + item.replace("shopify://shop_images", "");
         });
@@ -143,9 +149,10 @@ const sync = (shop, template, flag) => {
           password,
           files: [template],
           allowLive: true,
+          'no-theme-kit-access-notifier': true
         });
         console.log(chalk.green(`${shop}模板上传成功`));
-      } catch(e) {
+      } catch (e) {
         console.log(chalk.bold.red(`${shop}模板上传失败`));
       }
     }
@@ -164,7 +171,7 @@ const sync = (shop, template, flag) => {
       isUpload = answer.isUpload;
     }
     if (isUpload) {
-      await uploadImgs(shop, template)
+      await uploadImgs(shop, template);
     }
     resolve();
   });
@@ -178,56 +185,82 @@ const sync = (shop, template, flag) => {
   }
   config = parse(fs.readFileSync(configFile, "utf8"));
   env = options.env || Object.keys(config)[0];
-  const answers = await inquirer.prompt([
-    {
-      type: "input",
-      name: "template",
-      message: "请输入要同步的json模板文件",
-    },
+  let questions = [
     {
       type: "checkbox",
       name: "shops",
       message: "请选择要同步的商店",
       choices: Object.keys(config),
     },
-  ]);
-  let { template, shops } = answers;
-  if (template.indexOf(".json") < 0) {
-    template += ".json";
+  ];
+  if (!options.all) {
+    questions.unshift({
+      type: "input",
+      name: "template",
+      message: "请输入要同步的json模板文件",
+    });
   }
-  template = "templates/" + template;
+  const answers = await inquirer.prompt(questions);
+  let { template, shops } = answers;
+  let templates;
+  if (options.all) {
+    const { assets } = await request(
+      `https://${config[env].store}/${api}/themes/${config[env].theme_id}/assets.json?fields=key`
+    );
+    templates = assets
+      .map((asset) => asset.key)
+      .filter(
+        (item) => item.indexOf(".json") > 0 && item.indexOf("templates") === 0
+      );
+  } else {
+    if (template.indexOf(".json") < 0) {
+      template += ".json";
+    }
+    template = "templates/" + template;
+    templates = [template];
+  }
   const { store, theme_id, password } = config[env];
   try {
-    await themeKit.command("download", {
-      store,
-      themeId: theme_id,
-      password,
-      files: [template],
-    }, {logLevel: "silent"});
+    await themeKit.command(
+      "download",
+      {
+        store,
+        themeId: theme_id,
+        password,
+        files: templates,
+        'no-theme-kit-access-notifier': true
+      }
+    );
   } catch (e) {
     console.log(chalk.bold.red("错误：模板不存在!"));
     return;
   }
   for (let i = 0; i < shops.length; i++) {
-    const data = await request(`https://${config[shops[i]].store}/${api}/themes/${config[shops[i]].theme_id}/assets.json?asset[key]=${template}`);
-    if (data) {
-      let overwrite;
-      if (options.yes) {
-        overwrite = true;
+    for (let j = 0; j < templates.length; j++) {
+      const data = await request(
+        `https://${config[shops[i]].store}/${api}/themes/${
+          config[shops[i]].theme_id
+        }/assets.json?asset[key]=${template}`
+      );
+      if (data) {
+        let overwrite;
+        if (options.yes) {
+          overwrite = true;
+        } else {
+          const answer = await inquirer.prompt([
+            {
+              type: "confirm",
+              name: "overwrite",
+              message: `${shops[i]}模板已存在，是否覆盖?`,
+              default: false,
+            },
+          ]);
+          overwrite = answer.overwrite;
+        }
+        await sync(shops[i], templates[j], overwrite);
       } else {
-        const answer = await inquirer.prompt([
-          {
-            type: "confirm",
-            name: "overwrite",
-            message: `${shops[i]}模板已存在，是否覆盖?`,
-            default: false,
-          },
-        ]);
-        overwrite = answer.overwrite;
+        await sync(shops[i], templates[j], true);
       }
-      await sync(shops[i], template, overwrite);
-    } else {
-      await sync(shops[i], template, true);
     }
   }
 })();
